@@ -4,6 +4,11 @@
 ```bash
 go build -o orders
 ```
+# Sur Windows, Go génère parfois un fichier sans extension (orders au lieu de orders.exe).
+# Si c’est le cas, vous pouvez simplement le renommer :
+```bash
+rename-item orders orders.exe
+```
 ### Exécuter le programme
 ```bash
 .\orders orders.json
